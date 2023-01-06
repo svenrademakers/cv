@@ -1,3 +1,2 @@
-
-test:
-	cd examples/ ; for f in *.tex; do xelatex $$f; done
+Generate:
+	xelatex resume.tex
