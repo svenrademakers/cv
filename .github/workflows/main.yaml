@@ -1,0 +1,21 @@
+name: CI-pipeline
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout git repo
+        uses: actions/checkout@v2
+      - name: execute latex
+        run: docker run --rm --user $(id -u):$(id -g) -i -w "/doc" -v "$PWD":/doc thomasweise/texlive make
+      - name: Archive pdf
+        uses: actions/upload-artifact@v3
+        with:
+          name: pdf
+          path: resume.pdf
+
