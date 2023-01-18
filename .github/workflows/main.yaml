@@ -17,8 +17,11 @@ jobs:
       - name: compress pdf
         run: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=sven_r_$(date +%Y_%m_%d).pdf resume.pdf
       - name: Archive pdf
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: resume sven rademakers
-          path: sven_r_*.pdf
+          path: |
+            sven_r_*.pdf
+            *.log
 
