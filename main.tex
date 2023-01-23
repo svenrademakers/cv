@@ -35,9 +35,9 @@
 	
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Sven}}}}} % First name
+	{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Sven}}}} % First name
 	
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Rademakers}}}}} % Last name
+	{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Rademakers}}}} % Last name
 	
 	\vspace{6pt}
 	
@@ -71,6 +71,7 @@
 \cvsect{Who Am I?}
 \begin{minipage}[t]{0.3\textwidth} % 50% of the page for the skills bar chart
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
     \includegraphics[height=3cm]{Sven.png}
 \end{minipage}
 \hfill % Whitespace between
@@ -103,7 +104,7 @@
 		{\cvdate{Nov 2020}{Jan 2018}}
 		{Snowdrop Programmer}
 		{Massive Entertainment, a Ubisoft studio}
-		{ Member of the snowdrop team as programmer. (C++/Visual Studio) Game engine used for Tom Clancy's The Division 2.
+		{Member of the snowdrop team as programmer. (C++/Visual Studio) Game engine used for Tom Clancy's The Division 2.
           \begin{itemize}
            \setlength\itemsep{0em}
             \item { Developed Asset Mover tool in snowdrop editor (C++). packing of data, dependency-tracking, asset management.}
@@ -111,6 +112,36 @@
             \item { Supported sharpmake. in-house solution for generating build and
                 project files. }
          \end{itemize}
+            \texttt{C++}\slashsep\texttt{snowdrop}\slashsep\texttt{Visual Studio}\slashsep\texttt{windows}\slashsep\texttt{perforce}\slashsep\texttt{sharpmake}}
+	\entry
+		{\cvdate{Jan 2018}{Feb 2016}}
+        {Embedded Software Engineer}
+        {Philips}
+          {\begin{itemize}
+           \setlength\itemsep{0em}
+           \item {Developed Philips connectivity firmware on cypress microchips, Cortex-M4.(C++/ C, FreeRTOS, NetX).}
+            \item {Implemented features related to WIFI domain: UDP, TCP/IP, HTTP, TLS, SSDP.}
+            \item {Developed a Philips proprietary protocol based on SPI, UART and HTTP transports.}
+            \item {Implemented a streaming protocol on top of BLE GATT profile.}
+            \item {Migrated legacy C code to C++.}
+            \item {Developing and maintaining test automation (C\#).}
+            \item {Developing EmbeddedInfralib. a STL lookalike lib designed for embedded systems.}
+            \item {Created build automation and CI tooling (Python).}
+          \end{itemize}
+            \texttt{C++}\slashsep\texttt{}\slashsep\texttt{Visual Studio}\slashsep\texttt{windows}\slashsep\texttt{perforce}\slashsep\texttt{sharpmake}
+            }
+	\entry
+		{\cvdate{Jan 2016}{Feb 2013}}
+        {Software Engineer}
+        {TomTom Automotive}
+          {\begin{itemize}
+           \setlength\itemsep{0em}
+            \item {Developed Linux based navigation software for an in-dash car system using QT framework.}
+            \item {implemented GENIVI navigation services communicating over DBUS.}
+            \item {Implemented tacho and gyro filters for more reliable positioning of the car. }
+            \item {Lead on performance and stabilization. Profiled and improved 1.start-up behaviour, 2.performance, 3.memory usage, using profilers (valgrind) and memory leak detectors.}
+            \item {Fixed and stabilized Multithreading and mapviewer issues.}
+          \end{itemize}
             \texttt{C++}\slashsep\texttt{snowdrop}\slashsep\texttt{Visual Studio}\slashsep\texttt{windows}\slashsep\texttt{perforce}\slashsep\texttt{sharpmake}}
 \end{entrylist}
 
@@ -122,20 +153,10 @@
 
 \begin{entrylist}
 	\entry
-		{2013 -- 2017}
-		{Master's Degree}
-		{Another University Name}
-		{\lorem\lorem\lorem}
-	\entry
-		{2014}
-		{Postgraduate Diploma}
-		{A University Name}
-		{\lorem\lorem}
-	\entry
-		{2007 -- 2013}
-		{Bachelor's Degree}
-		{A University Name}
-		{\lorem\lorem}
+		{2009 -- 2013}
+		{Bachelor of computer science}
+        {Fontys University of Applied Sciences}
+        {Minor in embedded systems}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -145,6 +166,7 @@
 \begin{minipage}[t]{0.3\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Languages}
+
 	\textbf{Dutch} - native\\
 	\textbf{English} - proficient\\
 \end{minipage}
@@ -152,6 +174,7 @@
 \begin{minipage}[t]{0.3\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Hobbies}
+
 	Next to software engineering one of hobbies is playing guitar and doing sports(cycling).
 \end{minipage}
 \hfill
