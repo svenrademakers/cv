@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Sven}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Rademakers}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Senior Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.31\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Cobham, UK}\\
+	\icon{Phone}{12}{+44 (0)7 411 968 492}\\
+	\icon{At}{12}{\href{mailto:sven.rademakers@gmail.com}{sven.rademakers@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/sxrademakers}{sxrademakers}}\\
+	\icon{Github}{12}{\href{https://github.com/svenrademakers}{svenrademakers}}\\
+	\icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+\begin{minipage}[t]{0.3\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+    \includegraphics[height=3cm]{Sven.png}
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.7\textwidth} % 40% of the page width for the introduction text
+	Born in the Netherlands, Rust engineer with 10+ years experience in software engineering. I'm very driven to expand my expertise in back-ends, concurrency and async runtimes. Very curious by nature, always seeking to learn new things and I never back down from a challenge.\newline{}
+    A successful project for me is when we took risks, pushed the envelope on technology, while staying realistic and therefore made the right decisions.\newline{}
+    \texttt{Trust}\slashsep\texttt{Communication}\slashsep\texttt{Transparency}\slashsep\texttt{Perseverance}
+\end{minipage}
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {\cvdate{March 2023}{Nov 2020}}
+		{Senior Software Engineer}
+        {Silicon Labs}
+		{ Part of IoT gateway SDK team. This SDK is a platform that connects Z-Wave, Zigbee, Bluetooth protocol stacks to specific back-ends in an unified way. As a Rust lead my objective was to increase rust expertise in the company and grow the Rust code base.
+          \begin{itemize}
+           \setlength\itemsep{0em}
+                \item {Implemented features in Rust using tokio, no\_std, FFI, proc-macros.}
+        		\item {Release Coordinator. End responsible in making sure releases are according quality and delivered on time to our customers.}
+                \item {Designed and implemented a build-system that compiles Rust into C++ code bases using FFI.}
+        		\item {Designed and implemented procedural macros that simplifies data marshalling between Rust and C code.}
+        		\item {Designed and implemented custom async runtime in Rust on top of contiki (resource constrained OS). }
+          \end{itemize}
+        \texttt{Rust}\slashsep\texttt{tokio}\slashsep\texttt{no\_std}\slashsep\texttt{tauri}\slashsep\texttt{proc-macros}\slashsep\texttt{linux}\slashsep\texttt{arm64}\slashsep\texttt{nix}\slashsep\texttt{docker}\slashsep\texttt{C++}\slashsep\texttt{git}\slashsep\texttt{python}\slashsep\texttt{bash}}
+	\entry
+		{\cvdate{Nov 2020}{Jan 2018}}
+		{Snowdrop Programmer}
+		{Massive Entertainment, a Ubisoft studio}
+		{ Member of the snowdrop team as programmer. (C++/Visual Studio) Game engine used for Tom Clancy's The Division 2.
+          \begin{itemize}
+           \setlength\itemsep{0em}
+            \item { Developed Asset Mover tool in snowdrop editor (C++). packing of data, dependency-tracking, asset management.}
+            \item { Designed and implemented features for GENIE, a cut scene editor of snowdrop. (concurrency, C++) }
+            \item { Supported sharpmake. in-house solution for generating build and
+                project files. }
+         \end{itemize}
+            \texttt{C++}\slashsep\texttt{snowdrop}\slashsep\texttt{Visual Studio}\slashsep\texttt{windows}\slashsep\texttt{perforce}\slashsep\texttt{sharpmake}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2013 -- 2017}
+		{Master's Degree}
+		{Another University Name}
+		{\lorem\lorem\lorem}
+	\entry
+		{2014}
+		{Postgraduate Diploma}
+		{A University Name}
+		{\lorem\lorem}
+	\entry
+		{2007 -- 2013}
+		{Bachelor's Degree}
+		{A University Name}
+		{\lorem\lorem}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Languages}
+	\textbf{Dutch} - native\\
+	\textbf{English} - proficient\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Hobbies}
+	Next to software engineering one of hobbies is playing guitar and doing sports(cycling).
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	I help... \lorem
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
