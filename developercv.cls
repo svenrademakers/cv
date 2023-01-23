@@ -204,4 +204,4 @@
 
 % Command to output a separator slash between lists, e.g. '  /  '
 \newcommand{\slashsep}{\hspace{3mm}/\hspace{3mm}}
-\newcommand{\cvdate}[2]{#1\newline{}.\newline{}#2}
+\newcommand{\cvdate}[2]{#1\newline{}  .\newline{}#2}
