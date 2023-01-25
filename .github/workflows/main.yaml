@@ -11,14 +11,17 @@ jobs:
     steps:
       - name: checkout git repo
         uses: actions/checkout@v2
+      - run: sudo apt-get update && sudo apt-get install -y ghostscript 
       - name: generating pdf file
-        run: make
+        run: make build
+      - name: compress pdf
+        run: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=sven_r_$(date +%Y_%m_%d).pdf main.pdf
       - name: Archive pdf
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: resume sven rademakers
           path: |
-            sven_r_*.pdf
+            *.pdf
             *.log
 

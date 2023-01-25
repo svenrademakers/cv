@@ -201,8 +201,8 @@
 		\hfill% Horizontal whitespace
 		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
 		#4 % Entry description text
-	}\\\\\\\
-    \newline{}}
+	}\\\\\
+    }
 
 % Command to output a separator slash between lists, e.g. '  /  '
 \newcommand{\slashsep}{\hspace{2mm}/\hspace{2mm}}
