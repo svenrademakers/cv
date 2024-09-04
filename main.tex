@@ -32,32 +32,32 @@
 
 \begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
+
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
 	{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Sven}}}} % First name
-	
+
 	{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Rademakers}}}} % Last name
-	
+
 	\vspace{6pt}
-	
-    {\huge Rust Engineer} % Career or current job title
+
+    {\huge Senior Software Engineer} % Career or current job title
 \end{minipage}
 \begin{minipage}[t]{0.31\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
+
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{MapMarker}{12}{Cobham, UK}\\
+	\icon{MapMarker}{12}{Portslade, UK}\\
 	\icon{Phone}{12}{+44 (0)7 411 968 492}\\
-	\icon{At}{12}{\href{mailto:sven.rademakers@gmail.com}{sven.rademakers@gmail.com}}\\	
+	\icon{At}{12}{\href{mailto:sven.rademakers@gmail.com}{sven.rademakers@gmail.com}}\\
 \end{minipage}
 \begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
+
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{Globe}{12}{\href{https://svenrademakers.com}{svenrademakers.com}}\\
+    %	\icon{Globe}{12}{\href{https://svenrademakers.com}{svenrademakers.com}}\\
 	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/sxrademakers}{sxrademakers}}\\
 	\icon{Github}{12}{\href{https://github.com/svenrademakers}{svenrademakers}}\\
 \end{minipage}
@@ -77,19 +77,20 @@
 \begin{minipage}[t]{0.7\textwidth} % 40% of the page width for the introduction text
 	\vspace{0.5em} % Required for vertically aligning minipages
 
-	
+
     \colorbox{black}{\textcolor{white}{Experience:}}
-    \colorbox{black}{\textcolor{white}{Rust 2.5 years}}
-    \colorbox{black}{\textcolor{white}{C++ 7.5 years}}
+    \colorbox{black}{\textcolor{white}{Rust 4 years}}
+    \colorbox{black}{\textcolor{white}{C++ 7 years}}
     \newline{}
     \colorbox{black}{\textcolor{white}{Nationality: Netherlands}}
     \colorbox{black}{\textcolor{white}{UK Visa: PBS Dependant}}
     \newline{}
-    \colorbox{black}{\textcolor{white}{Age: 31 years}}
+    \colorbox{black}{\textcolor{white}{Age: 33 years}}
     \newline{}
     \newline{}
-     Driven to expand my expertise in Rust, back-ends, concurrency. Very curious by nature, always seeking to learn new things and I never back down from a challenge.\newline{}
-    A successful project for me is when we took risks, pushed the envelope on technology, while staying realistic and therefore made the right decisions.
+     Driven to expand my expertise in Low level systems, embedded, Linux, and concurrency. Very curious by nature, always seeking to learn new things and I never back down from a challenge.\newline{}
+    A successful project for me is when we took calculated risks, pushed the
+    envelope on technology, while staying realistic.
     \newline{}
     \texttt{Trust}\slashsep\texttt{Communication}\slashsep\texttt{Transparency}\slashsep\texttt{Perseverance}
 \end{minipage}
@@ -99,6 +100,21 @@
 
 \cvsect{Experience}
 \begin{entrylist}
+	\entry
+        {\cvdate{April 2023} {August 2024} }
+		{Lead Rust Engineer}
+        {London, UK\\Turing Machines}
+		{Architected, implemented and deployed firmware based on embedded linux
+        for the Turing Pi platform, A compact edge cluster.
+        \begin{itemize}
+           \setlength\itemsep{-0.5em}
+               \item {Laid down the vision and foundation for the product.}
+               \item {Setup embedded linux kernel and factory automation images}
+               \item {Designed and implemented a system to stream OS images to the inserted compute modules via a web UI.}
+                \item {Implemented a bootloader SPL that boots the appropriate DTS tree based on EEPROM content}
+          \end{itemize}
+        \texttt{u-boot}\slashsep\texttt{buildroot}\slashsep\texttt{cortex-A7}\slashsep\texttt{Linux}\slashsep\texttt{C}\slashsep\texttt{dts}\slashsep\texttt{Rust}\slashsep\texttt{actix}\slashsep\texttt{tokio}
+        }
 	\entry
         {\cvdate{March 2023}{Nov 2020}}
 		{Senior Software Engineer}
